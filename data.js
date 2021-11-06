@@ -70,7 +70,7 @@ export const links = [
   {
     icon: '<i class="fab fa-adversal"></i>',
     url: "./advertisezanzibar.html",
-    text: "Advertise on HomeNet",
+    text: "Advertise on ZanziHome",
   },
   {
     icon: '<i class="far fa-building"></i>',
