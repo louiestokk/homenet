@@ -47,6 +47,17 @@ export const objects = [
     desc: "Beach Front Plot",
     info: "Beach front plot with palms and other trees. Here yoou can build club, restaurant and bangalow or house. Located in were popular area with lot of thigs to do",
   },
+  {
+    id: 4,
+    url: ["./images/plotzanzibar.jpg"],
+    location: "Paje",
+    price: 45000,
+    size: 1500,
+    type: "Plot",
+    to: "Buy",
+    desc: "Beach Front Plot",
+    info: "Beach front plot with palms and other trees. Here yoou can build club, restaurant and bangalow or house. Located in were popular area with lot of thigs to do",
+  },
 ];
 
 export const links = [
