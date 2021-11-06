@@ -1,0 +1,708 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --logoColor: #16a34a;
+  --logoColorLight: #22c55e;
+  --lightGray: #334155;
+  --ultraLightGray: #f0fdf4;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.top i {
+  color: var(--logoColorLight);
+  font-size: 1.2rem;
+}
+.circle {
+  height: 2.1rem;
+  width: 2.1rem;
+  border: 3.5px solid #22c55e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0.5rem 0.5rem; */
+}
+.logo-text-container {
+  font-size: 0.9rem;
+  color: var(--lightGray);
+  font-family: "Roboto", sans-serif;
+  margin-left: 0.3rem;
+}
+
+.main-top {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.property-text {
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: var(--lightGray);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.divider {
+  width: 10rem;
+  height: 2px;
+  background: #22c55e;
+  margin-top: 0.2rem;
+}
+.fa-bars {
+  font-size: 1.7rem;
+  margin-right: 0.5rem;
+  color: var(--logoColorLight);
+  cursor: pointer;
+}
+.navbar {
+  margin-top: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  background: var(--ultraLightGray);
+  height: 100vh;
+  z-index: 10;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 4px 4px;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--lightGray);
+  margin: 0.5rem 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.navbar a:hover {
+  color: var(--logoColorLight);
+}
+.link-div {
+  display: flex;
+  align-items: center;
+}
+.link-div i {
+  margin: 0 0.5rem;
+  font-size: 1.4rem;
+  color: var(--logoColor);
+  margin: 0.7rem;
+}
+.banner-1 {
+  background: linear-gradient(
+      rgba(0.3, 0.3, 0.3, 0.3),
+      rgba(0.3, 0.3, 0.3, 0.3)
+    ),
+    url("./images/main-img.jpeg");
+  background-size: cover;
+}
+.banner-0 {
+  background: linear-gradient(
+      rgba(0.2, 0.2, 0.2, 0.2),
+      rgba(0.2, 0.2, 0.2, 0.2)
+    ),
+    url("./images/advertisezanzibarjpg.jpg");
+  background-size: cover;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.banner h2,
+h4,
+p {
+  max-width: 90%;
+}
+.explore-btn {
+  background: var(--logoColor);
+  color: white;
+  border: none;
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 4px 4px;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.explore-btn:hover {
+  background: white;
+  color: var(--logoColor);
+}
+.banner-2 {
+  background: linear-gradient(
+      rgba(0.1, 0.1, 0.1, 0.1),
+      rgba(0.1, 0.1, 0.1, 0.1)
+    ),
+    url("./images/banner-2.jpg");
+  background-size: cover;
+}
+.banner .divider {
+  margin: 0.5rem 0;
+}
+.banner p {
+  max-width: 600px;
+}
+.objects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.objects-container .divider {
+  margin: 0.5rem 0;
+}
+.objects {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center; */
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 1rem;
+}
+.object-div {
+  margin: 0.8rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 4px 4px;
+  width: 100%;
+}
+.object-div img {
+  width: 230px;
+  height: auto;
+  border-radius: 4px 4px;
+}
+.object-div h4 {
+  color: var(--logoColor);
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+.object-div p {
+  color: red;
+  font-size: 0.9rem;
+}
+.object-div button {
+  width: 5rem;
+  font-size: 0.8rem;
+}
+.price {
+  color: var(--logoColor);
+  font-size: 0.9rem;
+}
+.typeob {
+  color: var(--logoColor);
+  font-size: 1.2rem;
+}
+.explore-button {
+  width: 5.6rem;
+  height: 2rem;
+  border: none;
+  background: var(--logoColor);
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 4px 4px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.explore-button:hover {
+  background: white;
+  color: var(--logoColor);
+  border: 1px solid var(--logoColor);
+}
+.footer {
+  background: var(--logoColor);
+  height: 40rem;
+  margin-top: 2rem;
+}
+.footer .circle {
+  background: white;
+  margin-top: 2rem;
+}
+.footer .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .logo-text-container {
+  color: white;
+  margin-top: 2rem;
+}
+.rights {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--logoColor);
+}
+.rights h4 {
+  font-size: 0.9rem;
+}
+.object-div div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.nyhetsbrev {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.nyhetsbrev i {
+  color: white;
+  font-size: 2rem;
+}
+.nyhets-logo {
+  margin-top: 1rem;
+  height: 3rem;
+  width: 3rem;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.subs {
+  color: white;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.nyhetsbrev input {
+  border: none;
+  border-radius: 4px 4px;
+  color: var(--logoColor);
+  height: 1.8rem;
+  font-size: 1rem;
+}
+.nyhetsbrev button {
+  background: var(--logoColorLight);
+  color: white;
+  border: none;
+  height: 1.8rem;
+  width: 5rem;
+  border-radius: 4px 4px;
+  cursor: pointer;
+}
+.nyhetsbrev button:hover {
+  background: white;
+  color: var(--logoColorLight);
+}
+.mellan .link-div i {
+  color: white;
+  margin-top: 1rem;
+}
+.mellan .link-div a {
+  color: white;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+.fot-delare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fot-delare div {
+  margin-top: 1rem;
+  background: white;
+  width: 80vw;
+  height: 1px;
+}
+.form-contact-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#form-contact-form {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px 4px;
+  height: 240px;
+}
+#form-contact-form input {
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #16a34a;
+  margin: 0.5rem 0;
+
+  color: #16a34a;
+}
+#form-contact-form textarea {
+  width: 80%;
+  margin: 0.5rem 0;
+  border: 1px solid #16a34a;
+  border-radius: 4px 4px;
+  color: #16a34a;
+}
+#form-contact-form button {
+  width: 4rem;
+  height: 1.8rem;
+  border: none;
+  background: #16a34a;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 4px 4px;
+  cursor: pointer;
+}
+#form-contact-form button:hover {
+  background: transparent;
+  border: 1px solid #16a34a;
+  color: #16a34a;
+}
+.mellan-reklam {
+  background: linear-gradient(
+      rgba(0.3, 0.3, 0.3, 0.3),
+      rgba(0.3, 0.3, 0.3, 0.3)
+    ),
+    url("./images/propertyzanzibar.jpg");
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.mellan-reklam h1 {
+  max-width: 90vw;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.mellan-reklam select {
+  width: 50vw;
+  height: 2rem;
+  background: none;
+  border: 1px solid #16a34a;
+  border-radius: 4px 4px;
+  background: white;
+  cursor: pointer;
+  margin: 0.3rem 0;
+}
+.mellan-reklam option {
+  color: #16a34a;
+  cursor: pointer;
+}
+
+.mellan-reklam h3 {
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+.mellan-reklam span {
+  color: var(--logoColor);
+}
+#formform {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 4px 4px;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+  width: 80vw;
+}
+.paragraph {
+  color: #16a34a;
+  max-width: 80vw;
+}
+#formform input {
+  width: 70vw;
+  height: 2rem;
+  border: none;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #16a34a;
+  outline: none;
+}
+#formform button {
+  border: none;
+  margin-top: 0.5rem;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 4px 4px;
+  letter-spacing: 1px;
+  background: var(--logoColor);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+#formform Button:hover {
+  background: transparent;
+  color: var(--logoColor);
+  border: 1px solid #16a34a;
+}
+.contact-mitt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(0.4, 0.4, 0.4, 0.4),
+      rgba(0.4, 0.4, 0.4, 0.4)
+    ),
+    url("./images/propertyzanzibar.jpg");
+  background-size: cover;
+  height: 70vh;
+}
+.contact-mitt h4 {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.contact-mitt span {
+  color: #16a34a;
+}
+.contact-mitt p {
+  color: white;
+}
+.span-con {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  color: #16a34a;
+}
+.object-banner-text {
+  font-size: 0.85rem;
+  color: #22c55e;
+}
+.banner span {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .logo-text-container {
+    font-size: 0.8rem;
+  }
+  .property-text h2 {
+    font-size: 1rem;
+  }
+  .mellan-reklam h1 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+  }
+  .form-contact-div h4 {
+    font-size: 1rem;
+  }
+  .form-contact-div p {
+    font-size: 0.9rem;
+    max-width: 95vw;
+  }
+}
+.targeted-object {
+  position: relative;
+  margin: 1rem 0;
+  height: 70vh;
+  width: 100%;
+  background: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.targeted-object img {
+  width: 80%;
+  height: 100%;
+  border-radius: 4px 4px;
+}
+.targeted-object i {
+  margin: 0 0.5rem;
+  font-size: 1.4rem;
+  color: #16a34a;
+  cursor: pointer;
+}
+.targeted-object h3 {
+  color: #16a34a;
+}
+.targeted-object span {
+  color: #16a34a;
+}
+.targeted-object p {
+  font-size: 0.85rem;
+  color: #16a34a;
+  text-align: center;
+  margin-top: 1rem;
+}
+.targeted-object h4,
+h5 {
+  color: red;
+}
+.jajjemen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.targeted-object h6 {
+  color: #16a34a;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.targeted-object h3,
+h4,
+h5 {
+  margin-top: 0.5rem;
+}
+.lead-btn {
+  width: 7rem;
+  height: 1.8rem;
+  border-radius: 4px 4px;
+  border: none;
+  background: #16a34a;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.lead-btn:hover {
+  background: white;
+  border: 1px solid #16a34a;
+  color: #16a34a;
+}
+#interest-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#interest-form div {
+  margin-bottom: 1rem;
+}
+#interest-form input,
+textarea {
+  width: 60vw;
+  border-radius: 4px 4px;
+  margin: 0.2rem 0;
+  color: #07682b;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 1px solid #16a34a;
+}
+#interest-form input {
+  height: 1.8rem;
+}
+#interest-form h4 {
+  font-size: 2rem;
+  color: #16a34a;
+}
+.targeted-interest {
+  display: flex;
+  flex-direction: column;
+}
+#interest-form div {
+  margin-top: 1rem;
+}
+#interest-form button {
+  width: 5rem;
+  background: var(--logoColor);
+  font-size: 0.9rem;
+  border: none;
+  height: 2rem;
+  border-radius: 4px 4px;
+  color: white;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+#interest-form button:hover {
+  background: white;
+  border: 1px solid var(--logoColor);
+  color: #07682b;
+}
+
+.contact-now-btn {
+  text-decoration: none;
+  width: 7rem;
+  height: 1.8rem;
+  border-radius: 4px 4px;
+  border: none;
+  background: #16a34a;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+  padding: 0.45rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.contact-now-btn:hover {
+  background: white;
+  border: 1px solid #16a34a;
+  color: #16a34a;
+}
+.facts-div {
+  background: var(--logoColor);
+}
+.facts-1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.facts-1 h1 {
+  font-size: 1.2rem;
+  max-width: 80vw;
+  color: white;
+}
+.delare {
+  background: white;
+  width: 12rem;
+  height: 1px;
+  margin: 1rem 0;
+}
+.factscon {
+  margin: 1rem 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--logoColor);
+}
+.factscon h4 {
+  color: var(--logoColor);
+}
+.factscon p {
+  font-size: 0.9rem;
+  color: #07682b;
+}

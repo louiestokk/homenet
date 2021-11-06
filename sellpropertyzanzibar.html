@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sell Property Zanzibar" />
+    <script
+      src="https://kit.fontawesome.com/ee0a0de948.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js" type="module"></script>
+    <title>Sell Property Zanzibar</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .mellan-reklam h1 {
+        margin-bottom: 1rem;
+      }
+      .banner-0 {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 16rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-top">
+      <div class="top">
+        <div class="circle">
+          <i class="fas fa-home"></i>
+        </div>
+        <div class="logo-text-container">
+          <h2>HomeNet</h2>
+        </div>
+      </div>
+
+      <div class="property-text">
+        <h2>Sell & Rent Out Property</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div class="navbar hidden">
+      <!-- <div class="link-div">
+        <i class="fas fa-home"></i>
+        <a href="./renthousezanzibar" rel="external nofollow"
+          >Rent Property & Land
+        </a>
+      </div>
+      <div class="link-div">
+        <i class="fas fa-handshake"></i>
+        <a href="./sellhousezanzibar" rel="external nofollow"
+          >Sell Property & Land</a
+        >
+      </div>
+      <div class="link-div">
+        <i class="fas fa-money-check-alt"></i>
+        <a href="./buyhousezanzibar" rel="external nofollow"
+          >Buy Property & Land</a
+        >
+      </div>
+      <div class="link-div">
+        <i class="fas fa-file-signature"></i>
+        <a href="./leasinglandzanzibar" rel="external nofollow"
+          >Leasing Land
+        </a>
+      </div>
+      <div class="link-div">
+        <i class="far fa-building"></i>
+        <a href="./leasingcompanieszanzibar" rel="external nofollow"
+          >Leasing Compaines
+        </a>
+      </div>
+      <div class="link-div">
+        <i class="fab fa-adversal"></i>
+        <a href="./advertisehousezanzibar" rel="external nofollow"
+          >Advertise on HomeNet
+        </a>
+      </div>
+      <div class="link-div">
+        <i class="fas fa-question-circle"></i>
+        <a href="./facts" rel="external nofollow">Facts about buying a home </a>
+      </div>
+      <div class="link-div">
+        <i class="fas fa-phone-square"></i>
+        <a href="./contact" rel="external nofollow">Contact & Support </a>
+      </div> -->
+    </div>
+    <div class="mellan-reklam">
+      <h1>You want to <span>sell or rent out property in Zanzibar</span>?</h1>
+
+      <div class="mellan-reklam-form">
+        <form
+          action="https://formspree.io/f/mayaoryk"
+          method="POST"
+          id="formform"
+        >
+          <select name="sellorrent" id="sellorrent">
+            <option value="Sell">Sell</option>
+            <option value="Rent">Rent out</option>
+          </select>
+          <select name="proptype" id="proptype">
+            <option value="House">House</option>
+            <option value="Plot">Plot</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Business">Business</option>
+          </select>
+          <input type="text" name="sellarea" placeholder="Area example: Paje" />
+          <input
+            type="text"
+            name="sellsize"
+            placeholder="Size example: 800sqm"
+          />
+          <input type="text" name="sellprice" placeholder="Price USD $" />
+          <input type="text" name="seller" placeholder="Your name" />
+          <input type="text" name="sellnumber" placeholder="Your number" />
+          <input type="text" name="sellemail" placeholder="Your email" />
+          <button type="submit">send</button>
+        </form>
+      </div>
+    </div>
+    <div class="banner-0"></div>
+    <div class="footer">
+      <div class="nyhetsbrev">
+        <div class="nyhets-logo">
+          <i class="far fa-envelope"></i>
+        </div>
+        <h4 class="subs">Subscribe to our newsletter</h4>
+        <div>
+          <form
+            id="nyhets-form"
+            action="https://formspree.io/f/mayaoryk"
+            method="POST"
+          >
+            <input type="email" name="email" placeholder="email" />
+            <button type="submit" class="nyhets-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="mellan"></div>
+      <div class="fot-delare">
+        <div></div>
+      </div>
+      <div class="top">
+        <div class="circle">
+          <i class="fas fa-home"></i>
+        </div>
+        <div class="logo-text-container">
+          <h2>HomeNet</h2>
+        </div>
+      </div>
+      <div class="rights">
+        <h4>&copy; All Rights Reserved HomeNet.com</h4>
+      </div>
+    </div>
+  </body>
+</html>
