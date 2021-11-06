@@ -24,6 +24,7 @@ const objectsContainer = document.querySelector(".objects");
 const renderobjects = (array) => {
   array.map((el) => {
     const { url, location, price, size, type, to, desc, id } = el;
+
     let html = `
      <div class="object-div">
           <img src="${url[0]}" alt="property in Zanzibar" />
@@ -36,7 +37,7 @@ const renderobjects = (array) => {
           }</span>
           <p>${size}sqm</p>
           <span class="price">${
-            to === "Rent" ? `$${price}/month` : `Price ${price}$`
+            to === "Rent" ? `$${price}/week` : `Price ${price}.000$`
           }</span>
           <button class="explore-button objects-btn" id=${id}>read more</button>
           </div>
@@ -75,7 +76,9 @@ const targetObject = (data, number) => {
     </div>
     <h3>${to} ${type} in ${location}</h3>
     <h4><span>Size</span> ${size}sqm</h4>
-    <h5><span>Price</span>  $${price}</h5>
+    <h5><span>Price</span>  ${
+      to === "Rent" ? `$${price}/month` : `Price ${price}.000$`
+    }</h5>
     <p>${info}</p>
     <div>
     <a href="tel:+255779912498" class="contact-now-btn">contact now</a>

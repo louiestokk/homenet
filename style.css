@@ -578,11 +578,15 @@ h5 {
   margin-top: 2rem;
   cursor: pointer;
 }
-.targeted-object h3,
+.targeted-object,
 h4,
 h5 {
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
 }
+.targeted-object h3 {
+  margin-top: 1rem;
+}
+
 .lead-btn {
   width: 7rem;
   height: 1.8rem;

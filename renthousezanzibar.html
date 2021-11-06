@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="./style.css" />
 
+    <script defer src="./app.js" type="module"></script>
     <script defer src="./script.js" type="module"></script>
     <title>Rent House In Zanzibar</title>
     <style>
@@ -104,13 +105,14 @@
       <h2>Do you want to rent out your house?</h2>
       <div class="divider"></div>
       <h4>Do you have a plot or house in Zanzibar and want to rent it out?</h4>
-      <button class="explore-btn rent-out-btn">Rent out</button>
+      <button class="explore-btn start-sell-btn selll">Rent out</button>
     </div>
     <div class="objects-container">
       <h2>Objects</h2>
       <div class="divider"></div>
     </div>
     <div class="objects"></div>
+    <div class="targeted-object hidden"></div>
     <div class="banner banner-0"></div>
 
     <div class="footer">
@@ -147,19 +149,18 @@
       </div>
     </div>
     <script type="module">
-      import { objects } from "./data.js";
-      import { renderobjects } from "./renderobjects.js";
       const objectsContainer = document.querySelector(".objects");
 
-      renderobjects(objects, objectsContainer);
       const exploreBtn = document.querySelector(".explore-btn");
       exploreBtn.addEventListener("click", (e) => {
         objectsContainer.scrollIntoView({ behavior: "smooth" });
       });
 
-      document.querySelector(".rent-out-btn").addEventListener("click", (e) => {
-        location.href = "./sellpropertyzanzibar.html";
-      });
+      document
+        .querySelector(".start-sell-btn")
+        .addEventListener("click", (e) => {
+          location.href = "./sellpropertyzanzibar.html";
+        });
       document.querySelector(".adddd").addEventListener("click", (e) => {
         location.href = "./advertisezanzibar.html";
       });
