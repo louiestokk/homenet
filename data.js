@@ -38,7 +38,7 @@ export const objects = [
     location: "Pemba",
     price: 60,
     size: 1200,
-    type: "Plot",
+    type: "Land",
     to: "Buy",
     desc: "Beach Front Plot",
     info: "Beach front plot with palms and other trees. Here yoou can build club, restaurant and bangalow or house. Located in were popular area with lot of thigs to do",
