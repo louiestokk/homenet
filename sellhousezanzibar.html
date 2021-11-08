@@ -46,6 +46,51 @@
         <i class="fas fa-bars"></i>
       </div>
     </div>
+    <div class="filter-options-container hidden">
+      <div class="dd1">
+        <h4>Filter objects</h4>
+        <div class="divider"></div>
+      </div>
+      <div class="dd2">
+        <h4>Select location</h4>
+        <select
+          name="locationfilter"
+          id="locationfilter"
+          class="select-filter"
+        ></select>
+      </div>
+      <div class="dd2">
+        <h4>I want to</h4>
+        <select name="outafterfilter" id="outafterfilter" class="select-filter">
+          <option value="Rent">Rent</option>
+          <option value="Buy">Buy</option>
+        </select>
+      </div>
+      <div class="dd2">
+        <h4>type of object</h4>
+        <select name="outafterfilter" id="outafterfilter" class="select-filter">
+          <option value="House">House</option>
+          <option value="Land">Apartment</option>
+          <option value="Business">Land</option>
+          <option value="Rent out">Business</option>
+        </select>
+      </div>
+      <div class="price-range">
+        <h4>Price</h4>
+        <div class="price-rr">
+          <p class="amount">50$ - 300.000$</p>
+          <input
+            type="range"
+            class="range"
+            name="range"
+            min="50"
+            max="1000000"
+            step="100"
+          />
+        </div>
+      </div>
+      <button class="filter-submit-btn">search</button>
+    </div>
     <div class="navbar hidden">
       <div class="link-div">
         <i class="fas fa-home"></i>
@@ -110,6 +155,20 @@
     <div class="objects-container">
       <h2>Objects</h2>
       <div class="divider"></div>
+      <div class="filter-container">
+        <div>
+          <button id="filter-btn-ob">
+            <i class="fas fa-filter"></i>
+            Filter
+          </button>
+        </div>
+        <div>
+          <button id="save-btn-ob">
+            <i class="fas fa-share-square"></i>
+            Save Your Search
+          </button>
+        </div>
+      </div>
     </div>
     <div class="objects"></div>
     <div class="targeted-object hidden"></div>
