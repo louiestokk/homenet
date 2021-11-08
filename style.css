@@ -240,7 +240,7 @@ p {
 }
 .footer {
   background: var(--logoColor);
-  height: 40rem;
+  height: 45rem;
   margin-top: 2rem;
 }
 .footer .circle {
