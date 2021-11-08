@@ -116,6 +116,11 @@ export const links = [
   },
   {
     icon: '<i class="fas fa-home"></i>',
+    url: "./rentouthousezanzibar.html",
+    text: "Rent Out Property & Land",
+  },
+  {
+    icon: '<i class="fas fa-home"></i>',
     url: "./renthousezanzibar.html",
     text: "Rent Property & Land",
   },
