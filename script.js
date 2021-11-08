@@ -4,6 +4,7 @@ const navbtn = document.querySelector(".menu");
 const navbar = document.querySelector(".navbar");
 const mellan = document.querySelector(".mellan");
 const bannerNoll = document.querySelector(".banner-0");
+const filterContainer = document.querySelector(".filter-container");
 
 navbtn.addEventListener("click", (e) => {
   navbar.classList.toggle("hidden");

@@ -1,9 +1,11 @@
 import { objects } from "./data.js";
 const nyhetsForm = document.querySelector("#nyhets-form");
 const divEtt = document.querySelector(".targeted-object");
-
+const rangeAmount = document.querySelector(".amount");
+const range = document.querySelector(".range");
 const homeBtn = document.querySelector(".top");
 const exploreBtn = document.querySelector(".explore-btn");
+const filterBtn = document.querySelector(".filter-submit-btn");
 exploreBtn.addEventListener("click", (e) => {
   objectsContainer.scrollIntoView({ behavior: "smooth" });
 });
@@ -67,12 +69,12 @@ const targetObject = (data, number) => {
   const filtered = data.filter((el) => el.id === number);
   filtered.map((el, index) => {
     const { url, location, price, size, type, to, desc, id, info } = el;
-
     let html = `
     <div class="jajjemen">
-       <i class="fas fa-arrow-circle-left"></i>
+        <i class="fas fa-arrow-circle-left"></i>
        <img src="${url[0]}" alt="" class="target-image"/>
        <i class="fas fa-arrow-circle-right"></i>
+       
     </div>
     <h3>${to} ${type} in ${location}</h3>
     <h4><span>Size</span> ${size}sqm</h4>
@@ -163,3 +165,35 @@ const targetObject = (data, number) => {
     document.querySelector(".targeted-object").classList.add("hidden");
   });
 };
+
+const renderFilterOptions = (data, element) => {
+  const uniq = data.map((el) => el.location);
+  const onlyOne = new Set(uniq);
+  const nuka = [...onlyOne];
+  nuka.map((el) => {
+    let html = `
+      <option value="${el}" ${el === "Paje" && "selected"}>
+      ${el}
+      </option>
+    `;
+    element.insertAdjacentHTML("afterbegin", html);
+  });
+};
+
+renderFilterOptions(objects, document.querySelector("#locationfilter"));
+document.querySelector("#filter-btn-ob").addEventListener("click", (e) => {
+  document
+    .querySelector(".filter-options-container")
+    .classList.toggle("hidden");
+
+  document.querySelector(".filter-options-container").classList.toggle("show");
+  document.querySelector(".main-top").classList.toggle("darker");
+  document
+    .querySelectorAll(".banner")
+    .forEach((el) => el.classList.toggle("darker"));
+  document.querySelector(".dd1").scrollIntoView({ behavior: "smooth" });
+});
+
+range.addEventListener("change", (e) => {
+  rangeAmount.innerHTML = `${e.target.value}$`;
+});

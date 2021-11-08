@@ -526,6 +526,12 @@ p {
     max-width: 95vw;
   }
 }
+@media screen and (min-width: 662px) {
+  .object-div {
+    max-width: 340px;
+    flex-wrap: wrap;
+  }
+}
 .targeted-object {
   position: relative;
   margin: 1rem 0;
@@ -709,4 +715,110 @@ textarea {
 .factscon p {
   font-size: 0.9rem;
   color: #07682b;
+}
+.filter-container {
+  display: flex;
+}
+.filter-container button {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 2rem;
+  padding: 0.3rem;
+  border: 1px solid #16a34a;
+  background: white;
+  color: #16a34a;
+  border-radius: 4px 4px;
+  cursor: pointer;
+}
+.filter-container button:hover {
+  border: none;
+  background: var(--logoColor);
+  color: white;
+}
+.filter-options-container {
+  overflow: hidden;
+  position: absolute;
+  background: white;
+  height: 96%;
+  z-index: 10;
+  width: 60vw;
+  right: 0;
+  transform: translateX(100%);
+  max-width: 100%;
+  overflow: hidden;
+  transition: all ease-in-out 2s;
+  display: flex;
+  flex-direction: column;
+}
+.show {
+  transform: translateX(0%);
+}
+.dd1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.darker {
+  opacity: 0.2;
+}
+.dd2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 90%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin: 0.5rem auto;
+  border-top: 1px solid var(--logoColor);
+  border-radius: 4px 4px;
+}
+.dd2 h4 {
+  color: var(--logoColor);
+  font-size: 0.9rem;
+  margin: 0 1rem;
+}
+.select-filter {
+  width: 6rem;
+  height: 1.6rem;
+  border: 1px solid var(--logoColor);
+  background: white;
+  color: var(--logoColor);
+  border-radius: 4px 4px;
+  cursor: pointer;
+}
+.price-range {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.price-range h4 {
+  color: var(--logoColor);
+  margin-bottom: 0.4rem;
+  width: 100%;
+}
+.range {
+  width: 180px;
+}
+.filter-submit-btn {
+  border: 1px solid var(--logoColor);
+  background: white;
+  color: var(--logoColor);
+  border-radius: 4px 4px;
+  margin: 1rem auto;
+  width: 5rem;
+  height: 1.8rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.filter-submit-btn:hover {
+  border: none;
+  background: var(--logoColor);
+  color: white;
 }

@@ -46,52 +46,54 @@
         <i class="fas fa-bars"></i>
       </div>
     </div>
-    <div class="navbar hidden">
-      <!-- <div class="link-div">
-        <i class="fas fa-home"></i>
-        <a href="./renthousezanzibar.html" rel="external nofollow" id="testar"
-          >Rent Property & Land
-        </a>
+
+    <div class="filter-options-container hidden">
+      <div class="dd1">
+        <h4>Filter objects</h4>
+        <div class="divider"></div>
       </div>
-      <div class="link-div">
-        <i class="fas fa-handshake"></i>
-        <a href="./sellhousezanzibar.html" rel="external nofollow"
-          >Sell Property & Land</a
-        >
+      <div class="dd2">
+        <h4>Select location</h4>
+        <select
+          name="locationfilter"
+          id="locationfilter"
+          class="select-filter"
+        ></select>
       </div>
-      <div class="link-div">
-        <i class="fas fa-money-check-alt"></i>
-        <a href="./buyhousezanzibar.html" rel="external nofollow"
-          >Buy Property & Land</a
-        >
+      <div class="dd2">
+        <h4>I want to</h4>
+        <select name="outafterfilter" id="outafterfilter" class="select-filter">
+          <option value="Rent">Rent</option>
+          <option value="Buy">Buy</option>
+        </select>
       </div>
-      <div class="link-div">
-        <i class="fas fa-file-signature"></i>
-        <a href="./leasinglandzanzibar.html" rel="external nofollow"
-          >Leasing Land
-        </a>
+      <div class="dd2">
+        <h4>type of object</h4>
+        <select name="outafterfilter" id="outafterfilter" class="select-filter">
+          <option value="House">House</option>
+          <option value="Land">Apartment</option>
+          <option value="Business">Land</option>
+          <option value="Rent out">Business</option>
+        </select>
       </div>
-      <div class="link-div">
-        <i class="far fa-building"></i>
-        <a href="./leasingcompanyzanzibar.html" rel="external nofollow"
-          >Leasing Compaines
-        </a>
+      <div class="price-range">
+        <h4>Price</h4>
+        <div class="price-rr">
+          <p class="amount">50$ - 300.000$</p>
+          <input
+            type="range"
+            class="range"
+            name="range"
+            min="50"
+            max="1000000"
+            step="100"
+          />
+        </div>
       </div>
-      <div class="link-div">
-        <i class="fab fa-adversal"></i>
-        <a href="./advertisehousezanzibar" rel="external nofollow"
-          >Advertise on HomeNet
-        </a>
-      </div>
-      <div class="link-div">
-        <i class="fas fa-question-circle"></i>
-        <a href="./facts" rel="external nofollow">Facts about buying a home </a>
-      </div>
-      <div class="link-div">
-        <i class="fas fa-phone-square"></i>
-        <a href="./contact" rel="external nofollow">Contact & Support </a>
-      </div> -->
+      <button class="filter-submit-btn">search</button>
     </div>
+
+    <div class="navbar hidden"></div>
     <div class="banner banner-1">
       <h2>Property In Zanzibar</h2>
       <div class="divider"></div>
@@ -114,6 +116,21 @@
     <div class="objects-container">
       <h2>Objects</h2>
       <div class="divider"></div>
+
+      <div class="filter-container">
+        <div>
+          <button id="filter-btn-ob">
+            <i class="fas fa-filter"></i>
+            Filter
+          </button>
+        </div>
+        <div>
+          <button id="save-btn-ob">
+            <i class="fas fa-share-square"></i>
+            Save Your Search
+          </button>
+        </div>
+      </div>
     </div>
     <div class="objects"></div>
     <div class="targeted-object hidden"></div>
