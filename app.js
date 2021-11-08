@@ -7,7 +7,9 @@ const homeBtn = document.querySelector(".top");
 const exploreBtn = document.querySelector(".explore-btn");
 const filterBtn = document.querySelector(".filter-submit-btn");
 exploreBtn.addEventListener("click", (e) => {
-  objectsContainer.scrollIntoView({ behavior: "smooth" });
+  document
+    .querySelector(".objects-container")
+    .scrollIntoView({ behavior: "smooth" });
 });
 const addBanner = document.querySelector(".ad-banner");
 homeBtn.addEventListener("click", (e) => {
