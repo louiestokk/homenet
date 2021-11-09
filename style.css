@@ -257,14 +257,19 @@ p {
   margin-top: 2rem;
 }
 .rights {
+  height: 4rem;
   color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--logoColor);
 }
 .rights h4 {
   font-size: 0.9rem;
+}
+.rights p {
+  font-size: 0.8rem;
 }
 .object-div div {
   display: flex;
