@@ -80,8 +80,8 @@ export const objects = [
     id: 8,
     url: [
       "./images/beachplotzanzibar.jpg",
-      "./images/beachplotzanzibar-1",
-      "./images/beachplotzanzibar-2",
+      "./images/beachplotzanzibar-1.jpg",
+      "./images/beachplotzanzibar-2.jpg",
     ],
     location: "Paje",
     price: 135,
