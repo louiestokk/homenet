@@ -179,8 +179,8 @@ p {
 .objects {
   display: flex;
   flex-direction: row;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
   margin: 0 1rem;
@@ -535,9 +535,13 @@ p {
 }
 @media screen and (min-width: 662px) {
   .object-div {
-    max-width: 340px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    height: 16rem;
   }
+
   .mellan {
     display: flex;
     flex-direction: column;
