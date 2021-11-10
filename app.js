@@ -2,10 +2,10 @@ import { objects } from "./data.js";
 const nyhetsForm = document.querySelector("#nyhets-form");
 const divEtt = document.querySelector(".targeted-object");
 const rangeAmount = document.querySelector(".amount");
-const range = document.querySelector(".range");
+
 const homeBtn = document.querySelector(".top");
 const exploreBtn = document.querySelector(".explore-btn");
-
+const selectFilter = document.querySelectorAll(".select-filter");
 const filterBtn = document.querySelector(".filter-submit-btn");
 exploreBtn.addEventListener("click", (e) => {
   document
@@ -185,6 +185,12 @@ const renderFilterOptions = (data, element) => {
 
 renderFilterOptions(objects, document.querySelector("#locationfilter"));
 document.querySelector("#filter-btn-ob").addEventListener("click", (e) => {
+  if (e.target.textContent.includes("Filter")) {
+    e.target.textContent = "close";
+  } else {
+    e.target.innerHTML = ` <i class="fas fa-filter"></i> Filter`;
+  }
+
   document
     .querySelector(".filter-options-container")
     .classList.toggle("hidden");
@@ -197,6 +203,12 @@ document.querySelector("#filter-btn-ob").addEventListener("click", (e) => {
   document.querySelector(".dd1").scrollIntoView({ behavior: "smooth" });
 });
 
-range.addEventListener("change", (e) => {
-  rangeAmount.innerHTML = `${e.target.value}$`;
+const filterResult = () => {
+  const filtered = selectFilter.forEach((el) => {
+    console.log(el.name);
+  });
+};
+
+filterBtn.addEventListener("click", (e) => {
+  filterResult();
 });

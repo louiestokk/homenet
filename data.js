@@ -91,6 +91,17 @@ export const objects = [
     desc: "Beach side plot",
     info: "Big land in Paje Zanzibar, 1min walk to the beach and close to the main road. Close to the village located at paje beach side. Here you can build hotell or resort,  houses for business or a 2- 3 big house with pool.",
   },
+  {
+    id: 9,
+    url: ["newobject-1.jpg"],
+    location: "Paje",
+    price: 6,
+    size: 1450,
+    type: "Land",
+    to: "Buy",
+    desc: "New object plot",
+    info: "Big land in Paje on the way to Jambiani only 2 min with car. Perfect for a house with big garden. The plot is located on the other side of the road to the beach. 3-4min in the forest with car. There is lot of houses there and some under construction",
+  },
 ];
 
 export const links = [

@@ -68,27 +68,29 @@
         </select>
       </div>
       <div class="dd2">
-        <h4>type of object</h4>
-        <select name="outafterfilter" id="outafterfilter" class="select-filter">
+        <h4>Type of object</h4>
+        <select name="objecttype" id="objecttype" class="select-filter">
           <option value="House">House</option>
           <option value="Land">Apartment</option>
           <option value="Business">Land</option>
           <option value="Rent out">Business</option>
         </select>
       </div>
-      <div class="price-range">
-        <h4>Price</h4>
-        <div class="price-rr">
-          <p class="amount">50$ - 300.000$</p>
-          <input
-            type="range"
-            class="range"
-            name="range"
-            min="50"
-            max="1000000"
-            step="100"
-          />
-        </div>
+      <div class="dd2">
+        <h4>Max Price</h4>
+        <select name="maxprice" id="maxprice" class="select-filter">
+          <option value="50">50$</option>
+          <option value="100">200$</option>
+          <option value="500">$500</option>
+          <option value="1000">$1000</option>
+          <option value="2000">$2000</option>
+          <option value="5000">$5000</option>
+          <option value="10000">$10.000</option>
+          <option value="20000">$20.000</option>
+          <option value="50000">$50.000</option>
+          <option value="100000">$100.000</option>
+          <option value="200000">$200.000</option>
+        </select>
       </div>
 
       <button class="filter-submit-btn">search</button>
