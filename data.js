@@ -76,21 +76,6 @@ export const objects = [
     desc: "5 min to the beach",
     info: "Big land in Paje Zanzibar and close to the main road. Close to the village and paje beach. Here you can build smaller houses for business or a big house with pool.",
   },
-  {
-    id: 8,
-    url: [
-      "./images/beachplotzanzibar.jpg",
-      "./images/beachplotzanzibar-1",
-      "./images/beachplotzanzibar-2",
-    ],
-    location: "Paje",
-    price: 135,
-    size: 4900,
-    type: "Land",
-    to: "Buy",
-    desc: "Beach side plot",
-    info: "Big land in Paje Zanzibar, 1min walk to the beach and close to the main road. Close to the village located at paje beach side. Here you can build hotell or resort,  houses for business or a 2- 3 big house with pool.",
-  },
 ];
 
 export const links = [
