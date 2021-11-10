@@ -203,7 +203,7 @@ p {
 }
 .object-div h4 {
   color: var(--logoColor);
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 0.2rem 0;
 }
 .object-div p {
@@ -216,7 +216,7 @@ p {
 }
 .price {
   color: var(--logoColor);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .typeob {
   color: var(--logoColor);
@@ -269,6 +269,7 @@ p {
   font-size: 0.9rem;
 }
 .rights p {
+  margin-top: 0.5rem;
   font-size: 0.8rem;
 }
 .object-div div {
@@ -504,8 +505,9 @@ p {
   color: #16a34a;
 }
 .object-banner-text {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: #22c55e;
+  max-width: 140px;
 }
 .banner span {
   color: #16a34a;
@@ -535,6 +537,14 @@ p {
   .object-div {
     max-width: 340px;
     flex-wrap: wrap;
+  }
+  .mellan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
   }
 }
 .targeted-object {
@@ -826,4 +836,11 @@ textarea {
   border: none;
   background: var(--logoColor);
   color: white;
+}
+.filter-bbb-cc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }

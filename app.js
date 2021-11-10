@@ -5,6 +5,7 @@ const rangeAmount = document.querySelector(".amount");
 const range = document.querySelector(".range");
 const homeBtn = document.querySelector(".top");
 const exploreBtn = document.querySelector(".explore-btn");
+
 const filterBtn = document.querySelector(".filter-submit-btn");
 exploreBtn.addEventListener("click", (e) => {
   document
