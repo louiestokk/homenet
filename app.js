@@ -215,11 +215,7 @@ filterBtn.addEventListener("click", (e) => {
 const getFilteredObjects = (data) => {
   objectsContainer.innerHTML = "";
   const theOne = objects.filter(
-    (el) =>
-      el.location === data[0] &&
-      el.to === data[1] &&
-      el.type === data[2] &&
-      el.price <= data[3]
+    (el) => el.location === data[0] && el.to === data[1] && el.type === data[2]
   );
 
   toggleFunction();
