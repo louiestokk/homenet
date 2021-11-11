@@ -68,3 +68,10 @@ const renderAdBanner = () => {
   });
 };
 renderAdBanner();
+document.querySelector("#outafterfilter").addEventListener("click", (e) => {
+  if (e.target.value === "Buy") {
+    document.querySelector(".halvspecial").classList.remove("hidden");
+  } else {
+    document.querySelector(".halvspecial").classList.add("hidden");
+  }
+});

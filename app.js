@@ -2,7 +2,6 @@ import { objects } from "./data.js";
 const nyhetsForm = document.querySelector("#nyhets-form");
 const divEtt = document.querySelector(".targeted-object");
 const rangeAmount = document.querySelector(".amount");
-
 const homeBtn = document.querySelector(".top");
 const exploreBtn = document.querySelector(".explore-btn");
 const selectFilter = document.querySelectorAll(".select-filter");
@@ -196,7 +195,41 @@ document.querySelector("#filter-btn-ob").addEventListener("click", (e) => {
   } else {
     e.target.innerHTML = ` <i class="fas fa-filter"></i> Filter`;
   }
+  toggleFunction();
+  document.querySelector(".dd1").scrollIntoView({ behavior: "smooth" });
+});
 
+const filterResult = () => {
+  const array = [];
+  const filtered = selectFilter.forEach((el) => {
+    array.push(el.value);
+  });
+
+  getFilteredObjects(array);
+};
+
+filterBtn.addEventListener("click", (e) => {
+  filterResult();
+});
+
+const getFilteredObjects = (data) => {
+  objectsContainer.innerHTML = "";
+  const theOne = objects.filter(
+    (el) =>
+      el.location === data[0] &&
+      el.to === data[1] &&
+      el.type === data[2] &&
+      el.price <= data[3]
+  );
+
+  toggleFunction();
+  renderobjects(theOne);
+  document.querySelector(
+    "#filter-btn-ob"
+  ).innerHTML = ` <i class="fas fa-filter"></i> Filter`;
+};
+
+const toggleFunction = () => {
   document
     .querySelector(".filter-options-container")
     .classList.toggle("hidden");
@@ -206,15 +239,4 @@ document.querySelector("#filter-btn-ob").addEventListener("click", (e) => {
   document
     .querySelectorAll(".banner")
     .forEach((el) => el.classList.toggle("darker"));
-  document.querySelector(".dd1").scrollIntoView({ behavior: "smooth" });
-});
-
-const filterResult = () => {
-  const filtered = selectFilter.forEach((el) => {
-    console.log(el.name);
-  });
 };
-
-filterBtn.addEventListener("click", (e) => {
-  filterResult();
-});
