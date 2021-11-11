@@ -124,6 +124,12 @@ const targetObject = (data, number) => {
       id="interestInputemail"
       placeholder="Email"
     />
+     <input
+      type="text"
+      name="bud"
+      id="bud"
+      placeholder="Place a bid $"
+    />
     <textarea name="questions" id="questions" cols="30" rows="5" placeholder="questions?"></textarea>
       <div>
       <button class="send-interest-btn">send</button>
