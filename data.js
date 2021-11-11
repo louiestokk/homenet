@@ -56,7 +56,7 @@ export const objects = [
   },
   {
     id: 6,
-    url: ["./images/landpaje-1.jpg"],
+    url: ["./images/landpaje-1.jpg", "./images/my-2.jpg"],
     location: "Paje",
     price: 16,
     size: 1400,
@@ -67,7 +67,11 @@ export const objects = [
   },
   {
     id: 7,
-    url: ["./images/buylandpaje-3.jpg", "./images/buylandpaje-2.jpg"],
+    url: [
+      "./images/buylandpaje-3.jpg",
+      "./images/uk.png",
+      "./images/buylandpaje-2.jpg",
+    ],
     location: "Paje",
     price: 13,
     size: 900,
@@ -101,6 +105,17 @@ export const objects = [
     to: "Buy",
     desc: "New object plot",
     info: "Big land in Paje on the way to Jambiani only 2 min with car. Perfect for a house with big garden. The plot is located on the other side of the road to the beach. 3-4min in the forest with car. There is lot of houses there and some under construction",
+  },
+  {
+    id: 10,
+    url: ["./images/my-1.jpg", "./images/my-2.jpg"],
+    location: "Paje",
+    price: 6,
+    size: 555,
+    type: "Land",
+    to: "Buy",
+    desc: "5 min to the beach",
+    info: "Nice plot in Paje Zanzibar and very close to the main road. Close to the village and paje beach. Here you can build 2 smaller houses for business or a big house with big garden.",
   },
 ];
 
