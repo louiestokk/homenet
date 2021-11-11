@@ -110,7 +110,7 @@ export const objects = [
     id: 10,
     url: ["./images/my-1.jpg", "./images/my-2.jpg"],
     location: "Paje",
-    price: 6,
+    price: 7,
     size: 555,
     type: "Land",
     to: "Buy",
