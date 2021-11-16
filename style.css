@@ -19,6 +19,7 @@ body {
   flex-direction: row;
   align-items: center;
   cursor: pointer;
+  margin-left: 0.3rem;
 }
 .top i {
   color: var(--logoColorLight);
@@ -554,7 +555,7 @@ p {
 .targeted-object {
   position: relative;
   margin: 1rem 0;
-  height: 70vh;
+  height: 85vh;
   width: 100%;
   background: white;
   z-index: 10;
