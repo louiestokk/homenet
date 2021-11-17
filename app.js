@@ -88,7 +88,7 @@ const targetObject = (data, number) => {
     <a href="tel:+255779912498" class="contact-now-btn">contact now</a>
     <button class="lead-btn interest-btn" id=${id}>send interest</button>
     </div>
-    <h6 class="close"><i class="far fa-window-close"></i>close</h6>
+    <h6 class="close" data-id=${number}><i class="far fa-window-close"></i>close</h6>
   
     `;
 
@@ -171,6 +171,7 @@ const targetObject = (data, number) => {
   });
   document.querySelector(".close").addEventListener("click", (e) => {
     document.querySelector(".targeted-object").classList.add("hidden");
+    console.log(e.target.parentElement.dataset.id);
   });
 };
 
